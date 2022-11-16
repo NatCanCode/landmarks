@@ -6,9 +6,14 @@
 //
 
 import Foundation
+import Combine
 
-// Create an array of landmarks that ou initialize from landmarkData.json.
-var landmarks: [Landmark] = load("landmarkData.json")
+// Declare a new model type that comforms to the ObservableObject protocol from the Combine framework.
+final class ModelData: ObservableObject {
+    // Create an array of landmarks that ou initialize from landmarkData.json.
+    // Add a @Published attribute to the landmarks array. The ModelData object has been created.
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 // Create a load(_:) method that fetches JSON data with a given name from the app's main bundle.
 // The load method relies on the return type's conformance to the Decodable protocol which is one component of the Codable protocol.

@@ -19,6 +19,7 @@
 		ACAD60F52924DA6B00DBB067 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD60F42924DA6B00DBB067 /* Landmark.swift */; };
 		ACAD60F72924DA7C00DBB067 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD60F62924DA7C00DBB067 /* ModelData.swift */; };
 		ACAD60F92924DA9A00DBB067 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = ACAD60F82924DA9A00DBB067 /* landmarkData.json */; };
+		ACAD60FB2924FB7500DBB067 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAD60FA2924FB7500DBB067 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		ACAD60F42924DA6B00DBB067 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		ACAD60F62924DA7C00DBB067 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		ACAD60F82924DA9A00DBB067 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		ACAD60FA2924FB7500DBB067 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +92,11 @@
 			children = (
 				ACAD60DB2924D8F500DBB067 /* ContentView.swift */,
 				ACAD60EA2924D9F900DBB067 /* CircleImage.swift */,
+				ACAD60F22924DA5700DBB067 /* MapView.swift */,
 				ACAD60EC2924DA0E00DBB067 /* LandmarkRow.swift */,
 				ACAD60EE2924DA2D00DBB067 /* LandmarkList.swift */,
 				ACAD60F02924DA4700DBB067 /* LandmarkDetail.swift */,
-				ACAD60F22924DA5700DBB067 /* MapView.swift */,
+				ACAD60FA2924FB7500DBB067 /* FavoriteButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				ACAD60F32924DA5700DBB067 /* MapView.swift in Sources */,
 				ACAD60DC2924D8F500DBB067 /* ContentView.swift in Sources */,
 				ACAD60F72924DA7C00DBB067 /* ModelData.swift in Sources */,
+				ACAD60FB2924FB7500DBB067 /* FavoriteButton.swift in Sources */,
 				ACAD60DA2924D8F500DBB067 /* LandmarksApp.swift in Sources */,
 				ACAD60F52924DA6B00DBB067 /* Landmark.swift in Sources */,
 				ACAD60ED2924DA0E00DBB067 /* LandmarkRow.swift in Sources */,

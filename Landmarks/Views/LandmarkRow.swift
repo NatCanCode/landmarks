@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandmarkRow: View {
-//    Add landmark as a stored property of LandmarkRow.
+//  Add landmark as a stored property of LandmarkRow.
     var landmark: Landmark
     
     var body: some View {
@@ -30,15 +30,18 @@ struct LandmarkRow: View {
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+//  Update the preview to work with the ModeData object.
+    static var landmarks = ModelData().landmarks
+    
     static var previews: some View {
-//        Add the landmark parameter to the LandmarkRow initializer, spécifying the first element of the landmarks array.
-//        Use the .previewLayout(_:) modifier to set a size that approximates a row in a list.
-//        Use a group, a container for grouping view content.
+//  Add the landmark parameter to the LandmarkRow initializer, spécifying the first element of the landmarks array.
+//  Use the .previewLayout(_:) modifier to set a size that approximates a row in a list.
+//  Use a group, a container for grouping view content.
         Group {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
-//        Use the .previewLayout(_:) modifier to set a size that approximates a row in a list.
+//  Use the .previewLayout(_:) modifier to set a size that approximates a row in a list.
     }
 }
