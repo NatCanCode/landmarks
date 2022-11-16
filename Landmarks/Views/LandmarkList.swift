@@ -30,6 +30,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $showFavoritesOnly) {
                     Text("Favorites only")
                 }
+                .tint(.accentColor)
                 
 //  Create a nested ForEach group to transform the landmarks into rows.
                 ForEach(filteredLandmarks) { landmark in
