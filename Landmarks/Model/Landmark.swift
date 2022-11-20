@@ -16,6 +16,14 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var description: String
     var isFavorite: Bool
+    var isFeatured: Bool
+        
+    var category: Category
+    enum Category: String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
     
 //    Add an image property to read the name of the image from the data, and a computed image property that loads an image from the assets.
 //    Make the property private because users of the Landmarks structure care only about the image itself.
