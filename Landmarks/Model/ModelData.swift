@@ -14,6 +14,7 @@ final class ModelData: ObservableObject {
     // Add a @Published attribute to the landmarks array. The ModelData object has been created.
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    @Published var profile = Profile.default
     
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
